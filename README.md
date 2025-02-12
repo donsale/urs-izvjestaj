@@ -134,6 +134,8 @@ Kompajlira se na sličan način:
     cmake .. -DCMAKE_C_COMPILER=$HOME/x-tools/arm-etfbl-linux-gnueabihf/bin/arm-linux-gcc
     cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
+Takođe, potrebno je na isti način kompajlirati i biblioteku u rds folderu prije toga.
+
 Sada prebacimo izvršni fajl rdsdisplay na ploču.
 
 ## Pokretanje
