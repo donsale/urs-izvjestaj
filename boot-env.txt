@@ -1,0 +1,30 @@
+axibridge=ffd0501c
+axibridge_handoff=0x00000000
+bootargs=console=ttyS0,115200n8 ip=192.168.21.100 root=/dev/nfs nfsroot=192.168.21.101:/home/lesam/rootfs,nfsvers=3,tcp rw
+bootcmd=run fpga_load; run bridge_enable_handoff; run linux_load; bootz 0x01000000 - 0x02000000;
+bootdelay=5
+bootmode=sd
+bridge_enable_handoff=mw $fpgaintf $fpgaintf_handoff; mw $axibridge $axibridge_handoff; mw $l3remap $l3remap_handoff
+ethact=ethernet@ff702000
+ethaddr=0e:70:3b:3b:d6:84
+fdtcontroladdr=3bf8e640
+fpga2sdram=ffc25080
+fpga2sdram_apply=3ff795a4
+fpga2sdram_handoff=0x00000000
+fpga_load=mmc rescan; fatload mmc 0:1 $fpgadata socfpga.rbf; fpga load 0 $fpgadata $filesize
+fpgadata=0x03000000
+fpgaintf=ffd08028
+fpgaintf_handoff=0x00000000
+fpgatype=cv_se_a5
+ipaddr=192.168.21.100
+l3remap=ff800000
+l3remap_handoff=0x00000019
+linux_dtb=socfpga_cyclone5_de1_soc.dtb
+linux_dtb_load_address=0x02000000
+linux_load=ping $serverip; tftp 0x01000000 zImage; tftp 0x02000000 socfpga_cyclone5_de1_soc.dtb;
+linux_load_address=0x01000000
+serverip=192.168.21.101
+stderr=serial
+stdin=serial
+stdout=serial
+

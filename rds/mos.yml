@@ -1,0 +1,21 @@
+author: Chris Mumford <cmumford@cmumford.com>
+description: RDS decoding library.
+type: lib
+version: 0.9
+
+sources:
+  - src/freq_table.c
+  - src/freq_table_group.c
+  - src/mgos_rds_decoder.c
+  - src/rds_decoder.c
+
+includes:
+  - include
+
+tags:
+  - c
+  - rds
+  - fm
+  - radio
+
+manifest_version: 2018-06-20
