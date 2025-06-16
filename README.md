@@ -7,7 +7,7 @@ Obezbijediti podršku za kontrolu radio prijemnika (FM Click dodatna pločica sa
 
 
 ## Konfiguracija sistema
-Za potrebe izrade projektnog zadatka korišten je manuelni pristup konfiguracije iz laboratorijskih vježbi 1, 4, 5 i 6.
+Za potrebe izrade projektnog zadatka korišten je manuelni pristup konfiguracije ugrađenog sitema iz laboratorijskih vježbi [1](https://github.com/etf-unibl/urs-2025/blob/main/lab-01/lab-01.md), [4](https://github.com/etf-unibl/urs-2025/blob/main/lab-04/lab-04.md), [5](https://github.com/etf-unibl/urs-2025/blob/main/lab-05/lab-05.md) i [6](https://github.com/etf-unibl/urs-2025/blob/main/lab-06/lab-06.md).
 
 ## Dodatna konfiguracija
 
